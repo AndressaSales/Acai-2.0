@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Borel&family=Carattere&family=Dancing+Script&family=Edu+SA+Beginner&family=Fasthand&family=Noto+Sans+TC:wght@100..900&family=Pacifico&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik+Doodle+Shadow&family=Rubik+Wet+Paint&family=Sacramento&family=Vidaloka&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC , sans-serif";
+}
+body{
+    background-color: #f6f6f6;
+}
+.app{
+    margin: 0rem auto;
+}
+.button{
+    padding: 0.9rem 1.75rem;
+    transition: 0.2s;
+}
+.button:hover{
+    background-color: rgb(234, 234, 234);
+}
