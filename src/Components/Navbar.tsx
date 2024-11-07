@@ -50,12 +50,12 @@ export default function Navbar(){
                 <div>
                     <img src={logo} alt="logo" className='h-[150px]' />
                 </div>
-                <div className='lg:text-[#000] lg:text-[1.1rem] lg:font-semibold md:text-[1rem] links'>
-                    <a className='lg:mr-[3rem] mr-[1rem]' href="">Home</a>
-                    <a className='lg:mr-[3rem] mr-[1rem]' href="">About</a>
-                    <a className='lg:mr-[3rem] mr-[1rem]' href="">Testimonials</a>
-                    <a className='lg:mr-[3rem] mr-[1rem]' href="">Contact</a>
-                    <a className='lg:mr-[3rem] mr-[1rem]' href="">Cart</a>
+                <div className='lg:text-[#000] lg:text-[1.1rem] lg:font-semibold md:text-[1rem]'>
+                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">Home</a>
+                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">About</a>
+                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">Testimonials</a>
+                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">Contact</a>
+                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">Cart</a>
                     <button className='rounded-[5rem] font-semibold bg-[#fff] button md:text-[1rem]'>Reservas Agora</button>
                 </div>
                 

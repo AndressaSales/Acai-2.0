@@ -20,6 +20,13 @@ body{
     margin: 0rem auto;
 }
 
+.links:hover{
+    border: 3px solid plum;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    transition: .2s;
+}
 .button{
     padding: 0.9rem 1.75rem;
     transition: 0.2s;
