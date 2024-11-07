@@ -12,7 +12,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from '@mui/icons-material/CommentRounded';
+import ModeCommentRoundedIcon from '@mui/icons-material/ModeCommentRounded';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneAndroid";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { useState } from 'react';
@@ -32,7 +32,7 @@ export default function Navbar(){
         },
         {
             text: "Testimonials",
-            Icon: <CommentRoundedIcon />
+            Icon: <ModeCommentRoundedIcon />
         },
         {
             text: "Contact",
@@ -50,16 +50,17 @@ export default function Navbar(){
                 <div>
                     <img src={logo} alt="logo" className='h-[150px]' />
                 </div>
-                <div className='text-[#000] text-[1.1rem] font-semibold md:hidden'>
-                    <a className='mr-[3rem]' href="">Home</a>
-                    <a className='mr-[3rem]' href="">About</a>
-                    <a className='mr-[3rem]' href="">Testimonials</a>
-                    <a className='mr-[3rem]' href="">Contact</a>
-                    <button className='rounded-[5rem] font-semibold bg-[#fff] button'>Reservas Agora</button>
+                <div className='lg:text-[#000] lg:text-[1.1rem] lg:font-semibold md:text-[1rem] links'>
+                    <a className='lg:mr-[3rem] mr-[1rem]' href="">Home</a>
+                    <a className='lg:mr-[3rem] mr-[1rem]' href="">About</a>
+                    <a className='lg:mr-[3rem] mr-[1rem]' href="">Testimonials</a>
+                    <a className='lg:mr-[3rem] mr-[1rem]' href="">Contact</a>
+                    <a className='lg:mr-[3rem] mr-[1rem]' href="">Cart</a>
+                    <button className='rounded-[5rem] font-semibold bg-[#fff] button md:text-[1rem]'>Reservas Agora</button>
                 </div>
                 
-                <div  className='cursor-pointer text-[1.5rem]'>
-                    <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+                <div  className='cursor-pointer text-[2.5rem] md:hidden'>
+                    <HiOutlineBars3 color='#000' onClick={() => setOpenMenu(true)} />
                 </div>
                 <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
                     <Box
@@ -74,8 +75,8 @@ export default function Navbar(){
                                     return(
                                         <ListItem key={item.text}>
                                             <ListItemButton>
-                                                <ListItemIcon>{item.icon}</ListItemIcon>
-                                                <ListItemText>{item.text}</ListItemText>
+                                                <ListItemIcon className='text-[1rem]'>{item.icon}</ListItemIcon>
+                                                <ListItemText className='text-[1.5rem]'>{item.text}</ListItemText>
                                             </ListItemButton>
                                         </ListItem>
                                     )

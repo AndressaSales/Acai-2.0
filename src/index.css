@@ -12,7 +12,7 @@
     font-family: "Noto Sans TC , sans-serif";
 }
 body{
-    background-color: #f6f6f6;
+    background-color: #f4f4f4;
 }
 .app{
     margin: 0rem auto;
@@ -23,4 +23,13 @@ body{
 }
 .button:hover{
     background-color: rgb(234, 234, 234);
+}
+
+@media (max-width: 800px){
+    .links{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
 }
