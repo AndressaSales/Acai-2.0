@@ -20,6 +20,14 @@ body{
     margin: 0rem auto;
 }
 
+.menu{
+    display: none;
+}
+
+.links{
+    font-weight: 600;
+}
+
 .links:hover{
     border: 3px solid plum;
     border-left: none;
@@ -54,8 +62,13 @@ body{
 
 .img{
     flex: 1;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+    max-width: 600px;
 }
 
+.about-img{
+    flex: 0.9;
+}
 @media (max-width: 800px){
     .links{
         display: none;
@@ -64,6 +77,7 @@ body{
     }
     .menu{
         display: flex;
+        margin-left: 20px;
     }
     .cont{
         flex-direction: column-reverse;
@@ -81,5 +95,17 @@ body{
     .img{
         width: 100%;
         max-width: 400px;
+    }
+    .banner-home{
+        max-width: 450px;
+        right: -60px;
+    }
+    .about{
+        margin-top: 5rem !important;
+    }
+    .about-text{
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
     }
 }

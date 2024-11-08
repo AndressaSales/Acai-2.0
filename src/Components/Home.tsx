@@ -1,11 +1,15 @@
 import Navbar from "./Navbar";
 import acai from "../assets/tAcai.png";
 import { FiArrowRight } from "react-icons/fi";
+import banner from "../assets/home-banner-background.png"
 export default function Home(){
     return(
         <>
             <Navbar />
             <div className="relative flex pt-[3rem]">
+                <div className="absolute top-[-200px] right-[-114px] max-w-[550px] z-[-2] banner-home">
+                    <img src={banner} alt="banner" />
+                </div>
                 <div className="flex-1 flex flex-col justify-center items-start cont">
                     <h1 className="h1">O Melhor Açaí de Toda Região</h1>
                     <p className="p text-[#6a6a6a] max-w-[500px]">
@@ -15,7 +19,7 @@ export default function Home(){
                         Peça Agora <FiArrowRight className="ml-[0.75rem] text-[1.5rem]" />{" "}
                     </button>
                 </div>
-                <div className="img max-w-[600px]">
+                <div className="img">
                     <img src={acai} alt="" />
                 </div>
             </div>

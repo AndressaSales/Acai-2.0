@@ -56,10 +56,10 @@ export default function Navbar(){
                     <a className='lg:mr-[3rem] mr-[1rem] links' href="">Testimonials</a>
                     <a className='lg:mr-[3rem] mr-[1rem] links' href="">Contact</a>
                     <a className='lg:mr-[3rem] mr-[1rem] links' href="">Cart</a>
-                    <button className='rounded-[5rem] font-semibold bg-[#fff] button md:text-[1rem]'>Reservas Agora</button>
+                    <button className='rounded-[5rem] font-semibold bg-[#fff] button md:text-[1rem] links'>Reservas Agora</button>
                 </div>
                 
-                <div  className='cursor-pointer text-[2.5rem] md:hidden'>
+                <div  className='cursor-pointer text-[2.5rem] menu'>
                     <HiOutlineBars3 color='#000' onClick={() => setOpenMenu(true)} />
                 </div>
                 <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
