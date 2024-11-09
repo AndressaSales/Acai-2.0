@@ -12,7 +12,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import ModeCommentRoundedIcon from '@mui/icons-material/ModeCommentRounded';
+import CommentRoundedIcon from '@mui/icons-material/CommentRounded';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneAndroid";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { useState } from 'react';
@@ -32,7 +32,7 @@ export default function Navbar(){
         },
         {
             text: "Testimonials",
-            Icon: <ModeCommentRoundedIcon />
+            icon: <CommentRoundedIcon />
         },
         {
             text: "Contact",
@@ -50,7 +50,7 @@ export default function Navbar(){
                 <div>
                     <img src={logo} alt="logo" className='h-[150px]' />
                 </div>
-                <div className='lg:text-[#000] lg:text-[1.1rem] lg:font-semibold md:text-[1rem]'>
+                <div className='md:text-[1rem]'>
                     <a className='lg:mr-[3rem] mr-[1rem] links' href="">Home</a>
                     <a className='lg:mr-[3rem] mr-[1rem] links' href="">About</a>
                     <a className='lg:mr-[3rem] mr-[1rem] links' href="">Testimonials</a>

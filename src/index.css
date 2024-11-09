@@ -23,7 +23,13 @@ body{
 .menu{
     display: none;
 }
-
+a{
+    margin-right: 3rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 .links{
     font-weight: 600;
 }
@@ -69,15 +75,39 @@ body{
 .about-img{
     flex: 0.9;
 }
+
+.button-about{
+    padding: 1rem 2rem;
+}
+
+.cont-tes{
+    margin: 600px !important;
+}
+
+.h1-tes{
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.p-text-tes{
+    margin: 1.5rem 0rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+.tes-button{
+    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+}
+
+.svg{
+    margin: 0rem 0.25rem;
+}
+
 @media (max-width: 800px){
     .links{
         display: none;
-        font-weight: 600;
-        font-weight: bolder;
     }
     .menu{
         display: flex;
-        margin-left: 20px;
+        margin-left: 300px;
     }
     .cont{
         flex-direction: column-reverse;
@@ -96,10 +126,6 @@ body{
         width: 100%;
         max-width: 400px;
     }
-    .banner-home{
-        max-width: 450px;
-        right: -60px;
-    }
     .about{
         margin-top: 5rem !important;
     }
@@ -107,5 +133,27 @@ body{
         justify-content: center;
         align-items: center;
         margin-top: 4rem;
+    }
+    .testimonial{
+        margin-top: 1rem !important;
+    }
+    .app{
+        max-width: 95vw;
+    }
+    .banner-home{
+        display: none;
+    }
+    .about-back{
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px){
+    .banner-home{
+        display: none;
+    }
+    .about-back{
+        display: none;
     }
 }
