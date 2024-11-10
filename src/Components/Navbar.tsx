@@ -52,9 +52,9 @@ export default function Navbar(){
                 </div>
                 <div className='md:text-[1rem]'>
                     <a className='lg:mr-[3rem] mr-[1rem] links' href="">Home</a>
-                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">About</a>
-                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">Testimonials</a>
-                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">Contact</a>
+                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">Sobre</a>
+                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">Depoimentos</a>
+                    <a className='lg:mr-[3rem] mr-[1rem] links' href="">Contatos</a>
                     <a className='lg:mr-[3rem] mr-[1rem] links' href="">Cart</a>
                     <button className='rounded-[5rem] font-semibold bg-[#fff] button md:text-[1rem] links'>Reservas Agora</button>
                 </div>
