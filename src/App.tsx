@@ -1,4 +1,5 @@
 import About from "./Components/About"
+import Contact from "./Components/Contact"
 import Home from "./Components/Home"
 import Testimonial from "./Components/Testimonial"
 
@@ -9,6 +10,7 @@ function App() {
       <Home />
       <About />
       <Testimonial />
+      <Contact />
     </div>
   )
 }
