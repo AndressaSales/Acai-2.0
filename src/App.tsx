@@ -1,5 +1,6 @@
 import About from "./Components/About"
 import Contact from "./Components/Contact"
+import Footer from "./Components/Footer"
 import Home from "./Components/Home"
 import Testimonial from "./Components/Testimonial"
 
@@ -11,6 +12,7 @@ function App() {
       <About />
       <Testimonial />
       <Contact />
+      <Footer/>
     </div>
   )
 }
